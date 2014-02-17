@@ -11,7 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140217061101) do
+ActiveRecord::Schema.define(version: 20140217063408) do
+
+  create_table "athletes", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "athletes", ["email"], name: "index_athletes_on_email", unique: true
+  add_index "athletes", ["reset_password_token"], name: "index_athletes_on_reset_password_token", unique: true
+
+  create_table "recruiters", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "recruiters", ["email"], name: "index_recruiters_on_email", unique: true
+  add_index "recruiters", ["reset_password_token"], name: "index_recruiters_on_reset_password_token", unique: true
 
   create_table "roles", force: true do |t|
     t.string   "name"
@@ -47,13 +83,13 @@ ActiveRecord::Schema.define(version: 20140217061101) do
     t.datetime "invitation_sent_at"
     t.datetime "invitation_accepted_at"
     t.integer  "invitation_limit"
-    t.integer  "invited_by_id"
+    t.integer  "invited_by_id"           foreign_key: false
     t.string   "invited_by_type"
     t.integer  "invitations_count",      default: 0
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["invitation_token"], name: "index_users_on_invitation_token", unique: true
+  add_index "users", ["invitation_token"], name: "index_users_on_invitation_token", unique: false
   add_index "users", ["invitations_count"], name: "index_users_on_invitations_count"
   add_index "users", ["invited_by_id"], name: "index_users_on_invited_by_id"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
