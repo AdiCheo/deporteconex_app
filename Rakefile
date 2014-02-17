@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-DeporteconexApp::Application.load_tasks
+Sample3::Application.load_tasks

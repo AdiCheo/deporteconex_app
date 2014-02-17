@@ -1,3 +1,0 @@
-== README
-
-Official Deporte Conex Web application repo.
