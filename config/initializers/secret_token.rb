@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Sample3::Application.config.secret_key_base = '76f4669d09d619d6088ea9ab01e30d2be3c745b79f0ab447fcd8420bfeccec7b2ec40db5bf35183e625450daab3d99c585d8a5f6f9f7633e822c0068a293a8e5'
+DeporteConex::Application.config.secret_key_base = '6c976b2cc52669b54cf6d37a1b50ad23b8945d2948da453ffa6960bad6c3dcaf5ac29d3999e4236385be67790c78a2ef2de65f5e49314a98bb98f1d05f8659bf'

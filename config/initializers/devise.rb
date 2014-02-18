@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = 'c05f223e40ea74abad1fc40e6e81f8fcd968efbb68910af58edc48fe44fc63fb3f97032ce2525259594348023556cf654034c7844139aab802f329e34203bb4c'
+  config.secret_key = 'af06c6a09f9f33eacb67fa9c4c329056d2216070046df5c33f4c3fe9afa09472fa40993af3a4c8421ea92388eb5d5a0075e5d4ead979f12a130b30c340badd76'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -95,32 +95,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'b954edb9317d29c05ce32b330058dd2cbfa309fed5c869f88741a7bfa077cb523ca9e6a310ff24a639a385b752a1f2dcb785d77959d9ea18cdad4c0f081a1069'
-
-  # ==> Configuration for :invitable
-  # The period the generated invitation token is valid, after
-  # this period, the invited resource won't be able to accept the invitation.
-  # When invite_for is 0 (the default), the invitation won't expire.
-  # config.invite_for = 2.weeks
-
-  # Number of invitations users can send.
-  # - If invitation_limit is nil, there is no limit for invitations, users can
-  # send unlimited invitations, invitation_limit column is not used.
-  # - If invitation_limit is 0, users can't send invitations by default.
-  # - If invitation_limit n > 0, users can send n invitations.
-  # You can change invitation_limit column for some users so they can send more
-  # or less invitations, even with global invitation_limit = 0
-  # Default: nil
-  # config.invitation_limit = 5
-
-  # The key to be used to check existing users when sending an invitation
-  # and the regexp used to test it when validate_on_invite is not set.
-  # config.invite_key = {:email => /\A[^@]+@[^@]+\z/}
-  # config.invite_key = {:email => /\A[^@]+@[^@]+\z/, :username => nil}
-
-  # Flag that force a record to be valid before being actually invited
-  # Default: false
-  # config.validate_on_invite = true
+  # config.pepper = '1109172978605999a486bca965b0fffede601082b480a82eb443aa4ed74c342d5d9298f278df63f8fed0f166354f7d4fa292f2cea0df1307358062f2d1948998'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
