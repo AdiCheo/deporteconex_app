@@ -9,9 +9,15 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '>= 3.0.0.0'
-gem 'devise'
+
 gem 'figaro'
 gem 'simple_form'
+
+# Authorization, Authentication and Roles
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
+
 group :development do
   gem 'sqlite3'
   gem 'better_errors'
