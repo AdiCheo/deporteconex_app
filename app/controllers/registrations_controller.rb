@@ -9,7 +9,7 @@ class RegistrationsController < Devise::RegistrationsController
   def create
     if params[:role].present?
       super
-      resource.add_role(:role)
+      resource.add_role(params[:role])
       params.each do |key,value|
         Rails.logger.warn "Param #{key}: #{value}"
       end
