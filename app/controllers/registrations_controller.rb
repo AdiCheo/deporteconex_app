@@ -6,4 +6,15 @@ class RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.for(:account_update) {|u| u.permit(:name, :email, :password, :password_confirmation, :current_password)}
   end
 
+  def create
+    if params[:role].present?
+      super
+      resource.add_role(:role)
+      params.each do |key,value|
+        Rails.logger.warn "Param #{key}: #{value}"
+      end
+    else
+      redirect_to new_user_registration_path, :notice => "You need to select a role!"
+    end
+  end
 end
