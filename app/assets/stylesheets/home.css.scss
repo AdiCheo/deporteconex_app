@@ -84,12 +84,36 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #0e204a;
     color: #fff;
 }
+
+
+/*-- Block box style --*/
+.box {
+    padding: 40px 0;
+    position: relative;
+    zoom: 1;
+}
+
+.box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box:first-child {
+    padding-top: 0;
+}
+
+
 /*=============================== COMMON END ================================*/
 /*=============================== BLOCKS BEGIN ================================*/
 
 /*---------- CONTACT BLOCK BEGIN ----------*/
 
-#contact_us {}
+#contact_us {
+    ul {
+        list-style:none;
+    }
+}
 
 #contact_us h2 {
     margin-bottom: 30px;
