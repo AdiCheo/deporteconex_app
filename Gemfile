@@ -18,6 +18,8 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 
+gem "font-awesome-rails"
+
 group :development do
   gem 'sqlite3'
   gem 'better_errors'
