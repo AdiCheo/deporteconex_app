@@ -13,7 +13,7 @@
 /*=============================== COMMON BEGIN ================================*/
 
 * {
-    margin:0; 
+    margin:0;
     padding:0;
 }
 
@@ -28,8 +28,8 @@ img {
 html,
 
 body {
-    // background: #eee; 
-    font-family: 'Open Sans',sans-serif; 
+    background: #f7f7f7;
+    font-family: 'Open Sans',sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -103,8 +103,17 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0;
 }
 
-/*-- Social block style --*/
+.container-home .panel-heading {
+    background-color: #0E204A;
+    color: #fff;
+    border-radius: 25px 25px 0px 0px ;
+}
 
+.container-home .panel {
+    border-radius: 25px;
+}
+
+/*-- Social block style --*/
 .socials {
     float: right;
 }
