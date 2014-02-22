@@ -64,3 +64,73 @@ body {
 .jumbotron-home {
     background-color: #d7d7d7;
 }
+/*=============================== COMMON END ================================*/
+/*=============================== BLOCKS BEGIN ================================*/
+
+/*---------- CONTACT BLOCK BEGIN ----------*/
+
+#contact_us {}
+
+#contact_us h2 {
+    margin-bottom: 30px;
+}
+
+.map {
+    background: #fff;
+    border: 5px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+    float: right;
+    width:65%;
+    height:200px;
+}
+
+.contact_info {
+    width: 30%;
+    float: left;
+}
+
+.contact_info ul li {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.contact_info ul li > span:first-child {
+    background: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size:14px;
+    color:#bbbbbb;
+}
+
+/*---------- CONTACT BLOCK END ----------*/
+/*---------- FOOTER BLOCK BEGIN ----------*/
+
+.footerHeight {
+    height: 80px;
+    clear: both;
+}
+
+#footer {
+    background: #e4e4e4;
+    padding-top: 15px;
+    height: 65px;
+    clear: both;
+    margin: -80px 0 0;
+    position: relative;
+}
+
+#footer .copyright {
+    width: 160px;
+    float: left;
+}
+
+/*---------- FOOTER BLOCK END ----------*/
+/*=============================== BLOCKS END ================================*/
