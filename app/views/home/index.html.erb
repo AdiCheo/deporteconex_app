@@ -2,7 +2,7 @@
 <div class="jumbotron jumbotron-home">
     <div class="row">
         <div class="col-md-12 text-center">
-            <a href="/"><%= image_tag "logo.png", class: "logo" %></a>
+            <a href="/"><%= image_tag "logo-lg.png", class: "logo" %></a>
                 <p>The recruiting platform that provides opportunities for international student athletes and success on the court or field for American university sports coaches.</p>
         </div>
         <div class="col-md-12">
@@ -43,7 +43,10 @@
                 </div>
                 We cannot guarantee a student-athlete will receive an athletic scholarship. We can guarantee however, that we will work everyday to provide every student-athlete the chance to be noticed and recruited.
                 <br></br>
-                Sign up now. Your path to being recruited starts here. It is free and takes less than two minutes. Reserve your profile today and show your commitment to university coaches and recruiters!
+                <div class="text-center col-md-4">
+                <%= link_to 'Sign up Now', new_user_registration_path, class: "btn btn-warning btn-lg btn-block" %>
+                </div>
+                <p>Your path to being recruited starts here. It is free and takes less than two minutes. Reserve your profile today and show your commitment to university coaches and recruiters!
             </div>
         </div>
 </div>
@@ -51,19 +54,34 @@
 <div class="row">
                     <h2 class="text-center">Coaches and Scouts</h2>
                     <div class="panel panel-default">
-          <div class="panel-body">
+            <div class="panel-body">
+                <div class="col-md-8">
                     <h3>What’s in it for you?</h3>
-                    <p>
-                        <li>Large and unique talent pool to recruit from</li>
-                        <li>Easily search and track talented and qualified student-athletes</li>
-                        <li>Reduce time and stress finding athletes, spend more time evaluating and connecting with talented recruits</li>
-                    </p>
-                    <br></br>
+                    <div class="row text-center">
+                    <div class="col-md-4">
+                    <%= fa_icon "signal 4x" %>
+                    </br />
+                    <p>Reduce time and stress finding athletes, spend more time evaluating and connecting with talented recruits
+                    </div>
+                    <div class="col-md-4">
+                    <%= fa_icon "globe 4x" %>
+                    </br />
+                    <p>Large and unique talent pool to recruit from
+                    </div>
+                    <div class="col-md-4">
+                    <%= fa_icon "search 4x" %>
+                    </br />
+                    <p>Easily search and track talented and qualified student-athletes
+                    </div>
+                    
+                </div>
+                    <br />
                     College sports are incredibly competitive, and it all begins with recruiting. Deporte Conex offers the chance to view, evaluate, and connect with talented recruits at a click of the button. We help you reduce time and reduce stress from the typically complicated and fast-paced recruiting battle.
                     <br></br>
                     We help you uncover new talent and build impressive recruiting classes. Stop missing out on talented athletes and let us help you win the recruiting battle!
                     <br></br>
-                    </div></div>
+                    </div>
+                    <div class="col-md-4">
                     <h3>Why international talent?</h3>
 
                     Consider the following:
@@ -75,8 +93,13 @@
                     Physical location is no longer a limitation. Stop missing out on incredible talent and let us help you connect with athletes all over the world!
                     <br></br>
 
-                    Sign up now. It’s free and takes less than 120 seconds.
-
+                    <p>It’s free and takes less than 120 seconds.
+                        <br />
+                    <div class="text-center">
+                    <%= link_to 'Sign up Now', new_user_registration_path, class: "btn btn-warning btn-lg btn-block" %>
+                </div>
+                </div>
+                    </div></div>
                 </div>
 <!-- TABS BLOCK END -->
 <!-- CONTACT US BLOCK BEGIN -->
