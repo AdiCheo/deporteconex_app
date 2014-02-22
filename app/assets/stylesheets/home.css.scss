@@ -13,7 +13,7 @@
 /*=============================== COMMON BEGIN ================================*/
 
 * {
-    margin:0; 
+    margin:0;
     padding:0;
 }
 
@@ -28,8 +28,8 @@ img {
 html,
 
 body {
-    background: #f7f7f7; 
-    font-family: 'Open Sans',sans-serif; 
+    background: #f7f7f7;
+    font-family: 'Open Sans',sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -113,7 +113,58 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 25px;
 }
 
+/*-- Social block style --*/
+.socials {
+    float: right;
+}
 
+.socials ul li {
+    float: left;
+    margin-left: 14px;
+}
+
+.socials ul li:first-child {
+    margin-left: 0;
+}
+
+.socials ul li a {
+    display: block;
+    width: 40px;
+    height: 39px;
+    background:#aaaaaa;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-bottom:1px solid #999999;
+    text-decoration:none;
+    color:#ffffff;
+    line-height:40px;
+    text-align:center;
+    font-size:17px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.socials ul li a.fa-dribbble:hover {
+    background-color:#dd3f86;
+    border-bottom:1px solid #d01d6d;
+}
+
+.socials ul li a.fa-google-plus:hover {
+    background-color:#d94833;
+    border-bottom:1px solid #c03723;
+}
+
+.socials ul li a.fa-facebook:hover {
+    background-color:#3c599d;
+    border-bottom:1px solid #2c4889;
+}
+
+.socials ul li a.fa-twitter:hover {
+    background-color:#5dd7fc;
+    border-bottom:1px solid #43b6d9;
+}
 /*=============================== COMMON END ================================*/
 /*=============================== BLOCKS BEGIN ================================*/
 
@@ -179,10 +230,18 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
     margin: -80px 0 0;
     position: relative;
+    p {
+        line-height: 20px;
+        font-size: inherit;
+        text-align: center;
+    }
+    ul {
+        list-style:none;
+    }
 }
 
 #footer .copyright {
-    width: 160px;
+    width: 320px;
     float: left;
 }
 
