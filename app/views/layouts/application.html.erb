@@ -12,9 +12,15 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <div class="container" role="main">
+    <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
-    </div>
+    </main>
+
+    <script type="text/javascript">
+      $(function(){
+        $(".player").mb_YTPlayer();
+      });
+    </script>
   </body>
 </html>
