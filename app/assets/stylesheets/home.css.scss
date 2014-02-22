@@ -61,7 +61,22 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
 }
 
+/*-- Banner style --*/
+#banner { 
+    position: absolute; 
+    top: 110px; 
+    left: 0px; 
+    background-color: #ed9c28; 
+    width: 100%; 
+}
 
+#banner-content { 
+    margin: 0 auto; 
+    padding: 10px; 
+    border: 0px;
+    vertical-align: center;
+    align: center;
+}
 
 /*-- Block box style --*/
 .box {
@@ -164,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-home {
-    padding-top: 20px;
+    padding-top: 75px;
 }
 
 .jumbotron-home {
