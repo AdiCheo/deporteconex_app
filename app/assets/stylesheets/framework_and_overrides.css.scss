@@ -7,6 +7,10 @@ img {
   margin: 0 auto;
   }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
 }
@@ -19,4 +23,10 @@ footer {
 
 .copyright {
   color: #0e204a;
+}
+
+/*-- Banner style --*/
+.banner {
+    background-color: #ed9c28;
+    padding-bottom: 10px; 
 }
