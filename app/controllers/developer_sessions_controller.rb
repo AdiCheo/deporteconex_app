@@ -18,6 +18,9 @@ class DeveloperSessionsController < ApplicationController
     if ENV["DEVELOPERS"].include?(name.to_s)
       session[:developer_name] = name
       redirect_to root_url
+    else
+      # at some point we should log bad access attempts and block bad IPs that try to log in too much (if that ever happens)
+      redirect_to developer_lock_path
     end
   end
 end

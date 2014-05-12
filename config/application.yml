@@ -14,5 +14,5 @@ ADMIN_NAME: First User
 ADMIN_EMAIL: user@example.com
 ADMIN_PASSWORD: changeme
 
-DEVELOPERS: [DaveTD1]
+DEVELOPERS: [DaveTD1, DaveAtDC]
 ROLES: [Administrator, Recruiter, Athlete]
