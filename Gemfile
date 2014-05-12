@@ -18,12 +18,20 @@ gem 'devise'
 gem 'cancan'
 gem 'rolify'
 
+# Authentication providers
+gem 'omniauth'
+gem 'omniauth-twitter'
+# gem 'omniauth-facebook'
+# gem 'omniauth-linkedin'
+
 gem "font-awesome-rails"
 
 group :development do
+  gem 'therubyracer'
+  gem 'execjs'
   gem 'sqlite3'
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'binding_of_caller'
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
